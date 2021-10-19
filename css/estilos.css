@@ -182,3 +182,12 @@ td.text-right {
 .invalidIngreso { background-color: red; }
 #errorIngresoProf { color: red }
 #errotIngresoTime { color: red }
+
+.formLabel3 {
+  width: 100%;
+  padding: 5px 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-transform: lowercase; }
