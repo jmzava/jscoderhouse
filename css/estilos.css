@@ -183,19 +183,4 @@ td.text-right {
 #errorIngresoProf { color: red }
 #errotIngresoTime { color: red }
 
-.formIngresoLower {
-  width: 100%;
-  padding: 10px 0;
-  background: rgba(14, 123, 167, 0.7);
-  border: none;
-  border-bottom: 1px solid #666;
-  color: white;
-  font-size: 16px;
-  text-transform: lowercase;
-  outline: none;
-  transition: border-color .2s; }
-  .formIngreso::placeholder {
-    color: white; }
-  .formIngreso:focus {
-    border-bottom-color: white; }
 
