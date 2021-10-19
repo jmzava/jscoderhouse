@@ -1,0 +1,43 @@
+/* seccion de imports de variables */
+@import 'utilities/variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import "base/typo";
+
+/* definicion de body*/
+@import "layout/main";
+
+/* barra de navegacion */
+@import "layout/navigation";
+
+/* posicion de logo */
+@import "utilities/logo";
+
+/* center page */
+@import "utilities/center";
+
+// /* grillas */
+
+@import "components/grid";
+
+/* galeria */ 
+@import "components/galery";
+
+/*  modal */
+@import "components/modal";
+
+/* cards */
+@import "components/cards";
+
+/* slider  ver de sacarlo */
+@import "components/slider";
+
+/* Carousel */ 
+
+@import "components/_carousel";
+
+/* form contacto */
+@import "components/forms";
+
+/* Footer general */
+
+@import "layout/footer";

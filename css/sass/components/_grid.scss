@@ -1,0 +1,77 @@
+/*grilla ovalada y con texto */
+
+.containerHome {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 1vh;
+
+}
+
+.containerImg {
+    position: relative;
+    align-content: center;
+    width: 80%;
+
+    &:hover {
+        .image {
+            opacity: 0.3;
+        }
+
+        .middle {
+            opacity: 1;
+        }
+
+    }
+}
+
+.image {
+    border-radius: 90%;
+    padding-bottom: 10px;
+    border: 2px;
+    border-color: $colorNegro;
+    position: relative;
+    opacity: 1;
+    display: unset;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.middle {
+    // transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    color: $colorFuente;
+    font-size: 32px;
+    padding: 32px 32px;
+}
+
+@media screen and (min-width: 1024px) {
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    color: $colorFuente;
+    font-size: 32px;
+    padding: 32px 32px;
+}
+
+}

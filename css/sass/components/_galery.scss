@@ -1,0 +1,18 @@
+.galCards {
+    margin-top: 130px;
+    margin-left: 1%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    min-height: 1vh;
+
+    img {
+        margin: 10px;
+        border: 3px solid $colorNegro;
+        box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+        max-width: 23vw;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-image: url(../backs/back-movil.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $fuentePrincipal;
+    margin-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../backs/back-tablet.png);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url(../backs/back-full.jpg);
+    }
+}

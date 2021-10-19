@@ -1,0 +1,107 @@
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 85vh;
+
+    .slider {
+        height: 100%;
+        white-space: nowrap;
+        font-size: 0;
+        transition: 0.8s;
+
+        >* {
+            font-size: 1rem;
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+            height: 100%;
+            width: 100%;
+            background: none 50% no-repeat;
+            background-size: cover;
+        }
+    }
+    a {
+        border-radius: 50%;
+        margin: 0 3px;
+        color: rgba(150, 79, 79, 0.8);
+        text-decoration: none;
+    }
+    .bullets {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 20px;
+            height: 10px;
+            line-height: 10px;
+            text-decoration: none;
+            text-align: center;
+            background: $colorHover;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+        a+a {
+            background: $colorHover, 0.5;
+        }
+        :hover {
+            background: $colorHover, 0.5 !important;
+        }
+    }
+}
+
+
+
+
+/* NAVIGATION BUTTONS */
+
+.CSSgal >s:target ~ .bullets >* {      background: $colorHover, 0.5;}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+
+
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target~.slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target~.slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target~.slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+#s4:target~.slider {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+}
+
+
+@media screen and (min-width: 768px) {
+    .CSSgal {
+        .bullets{
+            bottom: 20%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .CSSgal {
+        .bullets{
+            bottom: 5%;
+        }
+    }
+}
