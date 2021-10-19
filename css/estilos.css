@@ -39,6 +39,7 @@ div.table-title {
 
 .input-box {
   position: relative;
+  text-transform: lowercase;
 }
 
 .invalid .input-box::before {
