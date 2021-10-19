@@ -2,10 +2,7 @@
 
 function cargaDOM() {
     $("#tablaInferior").hide();
-
 }
-
-
 
 /* validaciones al dejar los input*/
 function inputProfundidadDejaFoco() {
@@ -64,7 +61,6 @@ function inputCorreoFoco() {
     }
 }
 
-
 function selectBuceoFocus(){
     textoError2.innerHTML = ""
     textoError2.style.color = '#00ff00'
@@ -106,9 +102,7 @@ function buceoDiveLog() {
         cargoLS([buceoCont, buceo.profReal, buceo.tiempoReal, buceo.profTabla, buceo.tiempoTabla, buceo.grupoRep]);
         tablaFromLS();
         buceoCont = buceoCont + 1;
-
         swipeElementdown("tablaInferior")
-
         botonLimpiar();
         buceo.timeOKno();
         buceo.profOKno();
@@ -313,19 +307,3 @@ function validaCorreo() {
     }
     return valido
 }
-
-
-/* funciones en desarrollo para eliminado de localstorage */
-/*
-function cargoLSfromArray(buceosArray) {
-    buceoVarLS = "BUCEO" + buceo.dIndex
-    localStorage.setItem(buceoVarLS, JSON.stringify(buceosArray));
-}
-
-function eliminoBuceo(buceoAEliminar) {
-    largo = localStorage.length;
-    let localALimpiar = cargoArrayfromLS("BUCEO");
-    localALimpiar.splice(buceoAEliminar, 1);
-    cargoLSfromArray(localALimpiar)
-}
-*/

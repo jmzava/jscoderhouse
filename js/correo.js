@@ -1,15 +1,3 @@
-
-// const btnEnvioCorreo = document.getElementById("senLogButton");
-
-// btnEnvioCorreo.addEventListener("click", envioCorreo);
-
-// messagebuceo = 1
-// messagepreal = 12
-// messagetreal = 65
-// messageptabla = 15
-// messagettabla = 66
-// messagegrep = "B";
-
 function envioCorreo(messagePara,messageBuceo,messagePReal,messageTReal,messagePTabla,messageTTabla,messageGRep){
 var data = {
   service_id: 'service_46usxmj',

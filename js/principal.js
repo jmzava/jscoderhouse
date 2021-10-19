@@ -63,16 +63,11 @@ mezclaDeco(1);
 
 inputProfundidadHTML.addEventListener('blur', inputProfundidadDejaFoco,true);
 inputProfundidadHTML.addEventListener('focus', inputProfundidadFoco,true);
-
 inputTiempoHTML.addEventListener('blur', inputTiempoDejaFoco,true);
 inputTiempoHTML.addEventListener('focus', inputTiempoFoco,true);
-
-// inputIntervaloHTML.addEventListener('blur', inputTiempoDejaFoco,true);
 inputIntervaloHTML.addEventListener('focus', inputCorreoFoco,true);
 selectBuceoHTML.addEventListener('focus',selectBuceoFocus,true )
-
 buttonDiveLog.addEventListener("click", buceoDiveLog);
 buttonLimpiar.addEventListener("click", botonLimpiar);
 buttonBotonFuera.addEventListener("click",botonEnviar);
 
-// selectorFila.addEventListener("click",selectorDeFila);
