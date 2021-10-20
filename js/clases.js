@@ -31,7 +31,7 @@ class BuceoMezcla {
     }
 }
 
-class generoLetraTiempo {
+class GeneroLetraTiempo {
     constructor(decoTime, decoLetra) {
         this.decoTimeProf = decoTime;
         this.decoTimeLetra = decoLetra;

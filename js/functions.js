@@ -130,7 +130,7 @@ function mezclaDeco(mezcla) {
 
 function generoDecoGrupo(decoArr) {
     for (i = 0; i < decoArr.length; i++) {
-        noDecoGrupo[i] = new generoLetraTiempo(decoArr[i], grupo[i]);
+        noDecoGrupo[i] = new GeneroLetraTiempo(decoArr[i], grupo[i]);
 
     }
 }
@@ -257,7 +257,7 @@ function cargoLS(buceosArray) {
     const miSelect = document.getElementById("selectBuceo");
     var opt = document.createElement('option');
     opt.value = buceo.dIndex;
-    opt.innerHTML = "Buceo" + buceo.dIndex;
+    opt.innerHTML = "Buceo " + buceo.dIndex;
     miSelect.appendChild(opt);
 }
 
